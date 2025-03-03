@@ -1,0 +1,162 @@
+/* General Layout */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 25%;
+    background: rgb(30, 30, 30);
+    padding: 20px;
+    color: white;
+    min-height: 100vh;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Dashboard Content */
+  .dashboard {
+    width: 75%;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Dashboard Title */
+  .dashboard-title {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(235, 69, 18);
+    margin-bottom: 20px;
+  }
+  
+  /* Stats Grid - Each Row Contains 2 Cards */
+  .stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .stat-card {
+    flex: 1 1 calc(50% - 10px); /* Each row contains exactly 2 items */
+    min-width: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border-left: 5px solid rgb(235, 69, 18);
+  }
+  
+  .stat-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .stat-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat-card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(235, 69, 18);
+  }
+  
+  /* Charts Section */
+  .charts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .chart-card {
+    flex: 1 1 calc(50% - 10px); /* Each row contains exactly 2 items */
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .chart-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .chart-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: rgb(235, 69, 18);
+  }
+  
+  /* Recent Orders Table */
+  .recent-orders {
+    margin-top: 30px;
+  }
+  
+  .recent-orders h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: rgb(235, 69, 18);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  thead {
+    background: rgb(235, 69, 18);
+    color: white;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  tbody tr {
+    transition: background 0.3s ease;
+  }
+  
+  tbody tr:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      text-align: center;
+    }
+  
+    .dashboard {
+      width: 100%;
+    }
+  
+    .stats-grid,
+    .charts-grid {
+      flex-direction: column;
+    }
+  
+    .stat-card,
+    .chart-card {
+      width: 90%;
+    }
+  }
+  

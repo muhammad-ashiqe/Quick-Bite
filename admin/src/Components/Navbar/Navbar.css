@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 8px 4%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.navbar .logo-text{
+    font-family: fantasy;
+    color: rgb(235, 69, 18);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+span{
+    font-size: 16px;
+    margin-left: 5px;
+    color: #605d5d;
+    position: absolute;
+    left: 60px;
+    top: 38px;
+}
+
+.profile-pic{
+    width: 40px;
+}
