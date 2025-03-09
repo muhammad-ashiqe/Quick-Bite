@@ -40,7 +40,7 @@ const Dashboard = () => {
   const [foodStats, setFoodStats] = useState({ categories: [], monthlyAdditions: [] });
 
   // Base URL for API calls
-  const BASE_URL = "http://localhost:4000";
+  const BASE_URL = "https://quick-bite-backend.onrender.com";
 
   // Fetch all data on component mount
   useEffect(() => {
