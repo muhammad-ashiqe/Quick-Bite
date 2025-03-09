@@ -1,162 +1,110 @@
-/* General Layout */
-.dashboard-container {
+.hero{
+   display: flex;
+   justify-content: space-evenly;
+   height: 90vh;
+   
+}
+.hero-contents{
     display: flex;
-    min-height: 100vh;
-    background-color: #1e1e1e;
-    color: white;
-  }
-  
-  /* Sidebar */
-  .sidebar {
-    width: 25%;
-    background: rgb(30, 30, 30);
-    padding: 20px;
-    color: white;
-    min-height: 100vh;
-    border-right: 2px solid rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Dashboard Content */
-  .dashboard {
-    width: 75%;
-    padding: 20px;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /* Dashboard Title */
-  .dashboard-title {
-    text-align: center;
-    font-size: 2rem;
+}
+
+.hero .left{
+    width: 50%;
+    align-items: center;
+    padding: 30px 30px;
+    justify-content: center;
+    margin-top: 60px;
+    
+}
+
+.hero .left h2{
     color: rgb(235, 69, 18);
-    margin-bottom: 20px;
-  }
-  
-  /* Stats Grid - Each Row Contains 2 Cards */
-  .stats-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  
-  .stat-card {
-    flex: 1 1 calc(50% - 10px); /* Each row contains exactly 2 items */
-    min-width: 280px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, background 0.3s ease;
-    border-left: 5px solid rgb(235, 69, 18);
-  }
-  
-  .stat-card:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.2);
-  }
-  
-  .stat-card h2 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .stat-card p {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: rgb(235, 69, 18);
-  }
-  
-  /* Charts Section */
-  .charts-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 30px;
-    gap: 20px;
-  }
-  
-  .chart-card {
-    flex: 1 1 calc(50% - 10px); /* Each row contains exactly 2 items */
-    min-width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, background 0.3s ease;
-  }
-  
-  .chart-card:hover {
-    transform: scale(1.05);
-    background: rgba(255, 255, 255, 0.2);
-  }
-  
-  .chart-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: rgb(235, 69, 18);
-  }
-  
-  /* Recent Orders Table */
-  .recent-orders {
-    margin-top: 30px;
-  }
-  
-  .recent-orders h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: rgb(235, 69, 18);
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  thead {
+    font-size: 50px;
+    margin-top: 80px;
+    
+}
+
+.hero .left p{
+    color: rgb(1, 71, 41);
+    font-size: 20px;
+    margin-top: 10px;
+    
+}
+
+.hero .right{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero .right img{
+    margin-left: 50px; 
+    width: 500px;
+    height: 500px;
+    margin-top: 80px;
+}
+
+.hero button{
     background: rgb(235, 69, 18);
-    color: white;
-  }
-  
-  th, td {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  tbody tr {
-    transition: background 0.3s ease;
-  }
-  
-  tbody tr:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .dashboard-container {
-      flex-direction: column;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border: 1px solid  rgb(235, 69, 18);
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.hero button:hover{
+    background: rgb(95, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(95, 0, 0);
+   
+}
+
+@media (max-width:750px) {
+    .hero-contents{
+        display: flex;
+        flex-direction: column;
     }
-  
-    .sidebar {
-      width: 100%;
-      border-right: none;
-      text-align: center;
+
+    .hero-contents .left{
+        margin: 0;
+        padding: 0 10px;
+        width: auto;
+        align-items: center;
+        text-align: center;
+    
     }
-  
-    .dashboard {
-      width: 100%;
+
+    .hero-contents .left h2{
+       font-size: 40px;
     }
-  
-    .stats-grid,
-    .charts-grid {
-      flex-direction: column;
+
+    .hero-contents .left p{
+      font-size: 12px;
+
     }
-  
-    .stat-card,
-    .chart-card {
-      width: 90%;
+
+    .hero-contents .left button{
+       margin: 20px 25%;
     }
-  }
-  
+
+    .hero-contents .right{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-contents .right img{
+        margin:0 20px;
+        padding: 0;
+        width: 300px;
+        height: 300px;
+
+    }
+
+
+}
