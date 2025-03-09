@@ -5,10 +5,10 @@ import { connectDB } from './config/db.js';
 import foodRouter from './routes/foodRoute.js';
 import fs from 'fs';
 import userRoute from './routes/userRoute.js';
-import cartRouter from './routes/cartroute.js';
 import "dotenv/config.js"
 import orderRouter from './routes/orderRoute.js';
 import DashboardRouter from './routes/dashBordRoute.js';
+import {cartRouter} from './routes/cartRoute.js'
 
 
 dotenv.config(); // Load environment variables
