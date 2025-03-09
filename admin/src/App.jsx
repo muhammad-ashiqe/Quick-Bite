@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Dashboard from "./Pages/Dashbord/Dashbord";
 
 function App() {
-  const url = "http://localhost:4000";
+  const url = "https://quick-bite-backend.onrender.com";
   return (
     <>
       <ToastContainer />
