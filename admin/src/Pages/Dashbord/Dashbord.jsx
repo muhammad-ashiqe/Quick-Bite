@@ -13,7 +13,7 @@ import {
   Legend,
   Filler,
 } from "chart.js";
-import "./Dashbord.css"; // Custom CSS file
+import "./dashbord.css";
 
 // Register Chart.js components
 ChartJS.register(
