@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 import axios from "axios";
 
 const StoreContextProvider = (props) => {
-  const url = "http://localhost:4000";
+  const url = "https://quick-bite-backend.onrender.com";
   const [token, setToken] = useState("");
 
   const [cartItems, setCartItems] = useState({});
